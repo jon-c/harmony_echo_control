@@ -1,0 +1,43 @@
+{
+  "intents": [
+    {
+      "intent": "TurnOffIntent"
+    },
+        {
+      "intent": "TurnOnTvIntent"
+    },
+    {
+      "intent": "TurnOnNetflixIntent"
+    }, 
+    {
+      "intent": "TuneToChannelIntent",
+            "slots": [
+        {
+          "name": "channel",
+          "type": "LIST_OF_CHANNELS"
+        }
+      ]
+    },
+     {
+      "intent": "CommandIntent",
+            "slots": [
+        {
+          "name": "command",
+          "type": "LIST_OF_COMMANDS"
+        },
+                {
+          "name": "device",
+          "type": "LIST_OF_DEVICES"
+        }
+      ]
+    },   
+    {
+      "intent": "HelpIntent",
+      "slots": []
+    },
+    {
+      "intent": "FinishIntent",
+      "slots": []
+    }
+  ]
+}
